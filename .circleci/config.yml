@@ -12,7 +12,7 @@ jobs:
       - restore_cache:
           key: film-ratings-{{ checksum "project.clj" }}
       - run: lein deps
-      - save_chace:
+      - save_cache:
           paths:
             -  ∼/.m2
           key: firm-ratings-{{ checksum "project.clj" }}
