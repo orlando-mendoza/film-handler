@@ -15,5 +15,5 @@ jobs:
       - save_cache:
           paths:
             -  ∼/.m2
-          key: firm-ratings-{{ checksum "project.clj" }}
+          key: film-ratings-{{ checksum "project.clj" }}
       - run: lein do test, uberjar
